@@ -1,33 +1,56 @@
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-principal: #C0C0C0;
+    --botao-azul: #fcae12f8;
+    --cor-de-fundo: #567df1;
+    --botao-vermelho: #2531d6;
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
 *{
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: aqua;
+.principal{
+    background-image: url("boruto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: end;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+}
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-align: center;
+}
+.botao_secundario{
+    background-color: rgb(175, 12, 12);
+    border: 2px solid var(--branco-principal);
 }
 .titulo{
-    display: flex;
-    justify-content: center;
-    background-color: bisque;
-    color: rgb(red, green, blue);
-
-}
-.lista{
-    display: flex;
-    justify-content: space-around;
-    background-color: blanchedalmond;
-    font-size: 25px;
-    color: rgb(red, green, blue);
-}
-.imagem-1{
-    width: 100%;
-}
-.canto{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-}
-.imagem{
     text-align: center;
-    background-color: rgb(red, green, blue);
+    color: var(--branco-principal);
+}
+.container__botao-1{
+    background-color: var(--botao-vermelho);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-align: center;
+}
+.titulo{
+    font-size: 70px;
+    background: linear-gradient(to right, gold, #3a65e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
